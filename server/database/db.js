@@ -1,20 +1,25 @@
+const crypto = require('crypto');
+
 class Message {
     constructor() {
         this.messages = [
             {
                 text: "Hi there!",
                 user: "Amando",
-                added: new Date()
+                added: new Date(),
+                id: crypto.randomUUID(),
               },
               {
                 text: "Hello World!",
                 user: "Charles",
-                added: new Date()
+                added: new Date(),
+                id: crypto.randomUUID()
               }
         ];
     }
 
     addMessage(message) {
+        message.id = crypto.randomUUID();
         this.messages.push(message);
     }
 
@@ -23,7 +28,7 @@ class Message {
     }
 
     getMessage(id) {
-        return this.messages[id];
+        return this.messages.find(message => message.id === id);
     }
 
     deleteMessage(id) {
