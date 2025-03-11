@@ -7,12 +7,14 @@ class Message {
                 text: "Hi there!",
                 user: "Amando",
                 added: new Date(),
+                image: "onizuka.png",
                 id: crypto.randomUUID(),
               },
               {
                 text: "Hello World!",
                 user: "Charles",
                 added: new Date(),
+                image: "dandy.jpg",
                 id: crypto.randomUUID()
               }
         ];

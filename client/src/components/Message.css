@@ -1,0 +1,44 @@
+/*
+This file is also AI generated. You can find the full chat in the Message.js file.
+*/
+
+.message-container {
+  display: flex;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.message-container:hover {
+  background-color: #f5f5f5;
+}
+
+.message-image {
+  flex: 0 0 100px;
+  margin-right: 1rem;
+}
+
+.message-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.message-content {
+  flex: 1;
+}
+
+.message-user {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.message-text {
+  margin: 0;
+  line-height: 1.4;
+} 
