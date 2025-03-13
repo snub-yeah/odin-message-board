@@ -1,0 +1,52 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.top-bar {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.top-bar label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.top-bar input,
+.top-bar select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.add-message-button {
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.add-message-button:hover {
+  background-color: #1991db;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin: 20px 0;
+}

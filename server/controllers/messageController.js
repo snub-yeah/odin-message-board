@@ -7,6 +7,9 @@ const getMessages = asyncHandler(async (req, res) => {
 
 const getSingleMessage = asyncHandler(async (req, res) => {
     const message = database.getMessage(req.params.id);
+    if (!message) {
+        res.status(404).json({ message: 'Message not found' });
+    }
     res.json(message);
 });
 
