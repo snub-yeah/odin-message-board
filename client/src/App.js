@@ -80,7 +80,7 @@ function App() {
             </select>
             <button className="add-message-button" onClick={addMessage}>Add your own message!</button>
           </div>
-          <h1>Message Board</h1>
+          <h1>AniMessage Board</h1>
           {messages.map(message => (
             <Message
               key={message.id + message.user}
