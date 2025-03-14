@@ -8,7 +8,7 @@ const IndividualMessage = () => {
   const navigate = useNavigate();
   const fetchMessage = async () => {
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/messages/${id}`);
+      const response = await fetch(`/api/messages/${id}`);
       if (response.status == 404) {
         navigate('/');
       }
