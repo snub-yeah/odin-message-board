@@ -10,7 +10,7 @@ function App() {
   const [images, setImages] = useState([{}]);
 
   const fetchMessages = async () => {
-    const response = await fetch(`${process.env.REACT_APP_API_URL}/messages`);
+    const response = await fetch(`/api/messages`);
     const data = await response.json();
     setMessages(data);
   };
@@ -21,7 +21,7 @@ function App() {
       user: document.getElementById('user-name').value,
       image: document.getElementById('user-image').value,
     };
-    await fetch(`${process.env.REACT_APP_API_URL}/messages`, {
+    await fetch(`/api/messages`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
